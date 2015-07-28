@@ -1,0 +1,21 @@
+{
+  "name": "hongselect",
+  "version": "0.0.0",
+  "homepage": "https://github.com/liuhongqiang/hongselect",
+  "authors": [
+    "liuhongqiang <liuhongqiang@live.cn>"
+  ],
+  "description": "A simple web select.",
+  "main": "src/hongselect.src.js",
+  "keywords": [
+    "select"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "jquery": "2.1.4"
+  }
+}
