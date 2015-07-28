@@ -8,16 +8,14 @@ module.exports = function(grunt) {
 		},
 		uglify: {
 			build: {
-				expand:true,
 				src: "src/hongselect.src.js",
 				dest: "dist/hongselect.min.js"
 			}
 		},
 		cssmin: {
 			build: {
-				expand:true,
-				src: "css/hongselect.src.css",
-				dest: "dist/hongselect.src.min.css"
+				src: "src/hongselect.src.css",
+				dest: "dist/hongselect.min.css"
 			}
 		},
 		imagemin: {
