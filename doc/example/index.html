@@ -2,12 +2,15 @@
 <head>
     <meta charset="utf-8">
     <title>HongSelect</title>
-    <link rel="stylesheet" type="text/css" href="../../src/hongselect.src.css">
+    <link rel="stylesheet" type="text/css" href="../../src/css/hongselect.src.css">
     <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../../src/hongselect.src.js"></script>
     <script type="text/javascript">
         $(function(){
             $("#myselect").hongselect();
+            $("#btn_setval").click(function(){
+                $("#myselect").hongselect("setSelectVal","1");
+            });
         });
     </script>
 </head>
@@ -16,6 +19,12 @@
         <option value="1">one</option>
         <option value="2" selected>two</option>
         <option value="3">three</option>
+        <option value="4">four</option>
+        <option value="5">five</option>
     </select>
+    <br/>
+    <br/>
+    <br/>
+    <button id="btn_setval">set value = 1</button>
 </body>
 </html>

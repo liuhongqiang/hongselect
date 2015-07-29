@@ -14,15 +14,14 @@ module.exports = function(grunt) {
 		},
 		cssmin: {
 			build: {
-				src: "src/hongselect.src.css",
-				dest: "dist/hongselect.min.css"
+				src: "src/css/hongselect.src.css",
+				dest: "dist/css/hongselect.min.css"
 			}
 		},
 		imagemin: {
 			build: {
-				expand:true,
-				src: "src/img/**/*",
-				dest: "dist/"
+				src: "src/img/arrow.png",
+				dest: "dist/img/arrow.png"
 			}
 		}
 	});
