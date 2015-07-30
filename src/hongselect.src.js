@@ -37,9 +37,9 @@
             dl.hide();
             var dd = dl.find("dd");
             dd.addClass(theme + "_dd");
-            dd.hover(function(){
+            dd.hover(function () {
                 $(this).addClass(theme + "_dd_hover");
-            },function(){
+            }, function () {
                 $(this).removeClass(theme + "_dd_hover");
             });
 
