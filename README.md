@@ -50,7 +50,59 @@ $("#myselect").hongselect("setSelectVal", 1);
 ```javascript
 $("#myselect").hongselect("refresh");
 ```
+##四.自定义皮肤
+###1.编写皮肤css
+```css
+.myskin_hongselect {
+    width: 150px;
+    position: absolute;
+}
 
+.myskin_info_span {
+    cursor: pointer;
+    text-indent: 10px;
+    color: #666;
+    display: block;
+    padding-right: 20px;
+    height: 30px;
+    line-height: 25px;
+    background: url(../img/arrow.png) no-repeat right center;
+    position: relative;
+    border: 1px solid #ccc;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
+.myskin_dl {
+
+    border-bottom: 1px solid #ccc;
+    margin: 1px 0 0;
+}
+
+.myskin_dd {
+    cursor: pointer;
+    height: 30px;
+    line-height: 25px;
+    color: #666;
+    white-space: normal;
+    padding: 0 10px;
+    background: #f1f1f1;
+    margin: 0;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.myskin_dd_hover {
+    background: #fff;
+}
+  
+```
+###2.使用皮肤
+```javascript
+$("#myselect").hongselect({theme: "myskin"});
+```
 
 
