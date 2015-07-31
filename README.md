@@ -41,6 +41,15 @@ https://github.com/liuhongqiang/hongselect/releases
 ```javascript
 $("#myselect").hongselect();
 ```
+##三.方法
+###1.设置选中值
+```javascript
+$("#myselect").hongselect("setSelectVal", 1);
+```
+###2.更新
+```javascript
+$("#myselect").hongselect("refresh");
+```
 
 
 
