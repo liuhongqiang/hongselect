@@ -68,6 +68,16 @@
         },
         refresh: function () {
             this.render();
+        },
+        hide: function () {
+            this.container.hide();
+        },
+        show: function () {
+            this.container.show();
+        },
+        destroy: function () {
+            this.container.remove();
+            this.origin.data('hongselect', null);
         }
     };
 
