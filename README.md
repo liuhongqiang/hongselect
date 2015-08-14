@@ -42,13 +42,25 @@ https://github.com/liuhongqiang/hongselect/releases
 $("#myselect").hongselect();
 ```
 ##三.方法
-###1.设置选中值
+####设置选中值
 ```javascript
 $("#myselect").hongselect("setSelectVal", 1);
 ```
-###2.更新
+####更新
 ```javascript
 $("#myselect").hongselect("refresh");
+```
+####隐藏
+```javascript
+$("#myselect").hongselect("hide");
+```
+####显示
+```javascript
+$("#myselect").hongselect("show");
+```
+####销毁
+```javascript
+$("#myselect").hongselect("destroy");
 ```
 ##四.自定义皮肤
 ###1.编写皮肤css
