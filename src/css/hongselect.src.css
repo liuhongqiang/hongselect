@@ -1,12 +1,12 @@
 .default_hongselect {
-    width: 150px;
-    position: absolute;
+    width: 100%;
+    position: relative;
 }
 
 .default_info_span {
     cursor: pointer;
     text-indent: 10px;
-    color: #666;
+    color: #666666;
     display: block;
     padding-right: 20px;
     height: 30px;
@@ -19,9 +19,10 @@
 }
 
 .default_dl {
-
     border-bottom: 1px solid #ccc;
-    margin: 1px 0 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .default_dd {
