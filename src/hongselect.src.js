@@ -44,10 +44,13 @@
             });
 
             //show and hide
-            infoSpan.click(function (e) {
-                e.preventDefault();
-                e.stopPropagation();
+            that.isMouseIn = false;
+            infoSpan.click(function () {
                 dl.show();
+            }).hover(function () {
+                that.isMouseIn = true;
+            }, function () {
+                that.isMouseIn = false;
             });
             dd.each(function () {
                 $(this).click(function () {
@@ -59,7 +62,9 @@
 
             //click blank hide
             $(document).click(function () {
-                dl.hide();
+                if(!that.isMouseIn){
+                    dl.hide();
+                }
             });
         },
         setSelectVal: function (value) {
