@@ -57,14 +57,13 @@
                     infoSpan.text($(this).text());
                     $(that.origin).val($(this).attr("data-val"));
                     $(that.origin).trigger("change");
+                    dl.hide();
                 });
             });
 
-            //click blank hide
-            $(document).click(function () {
-                if(!that.isMouseIn){
-                    dl.hide();
-                }
+            //mouse leave hide
+            that.container.mouseleave(function(){
+                dl.hide();
             });
         },
         setSelectVal: function (value) {
