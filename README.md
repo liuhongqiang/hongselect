@@ -4,8 +4,6 @@ A simple select plugin based on jQuery.
 
 一个基于jQuery的简单select插件。
 
-![hongselect](http://www.smallyard.cn/img/hongselect.png)
-
 ##一.安装
 
 ###1.使用bower
